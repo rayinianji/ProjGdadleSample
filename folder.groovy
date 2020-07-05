@@ -7,17 +7,3 @@ folder('ABC/QA') {
 folder('ABC/Prod') {
     description('Folder containing all PROD jobs for project ABC')
 }
-	
-job('ABC/Dev/CI-CD') {
-    scm {
-        git {
-		
-            remote {
-                url('https://github.com/rayinianji/NewWebproject.git')
-				
-                }
-			branch('master')	
-        }
-    }
-}
-	
