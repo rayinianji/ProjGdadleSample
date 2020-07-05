@@ -1,3 +1,3 @@
-folder('abc/Dev') {
-    description('Folder containing all DEV jobs for project ABC')
+folder('project-a/testing') {
+    description('Folder containing all QA jobs for project A')
 }
