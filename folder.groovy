@@ -7,19 +7,6 @@ folder('ABC/QA') {
 folder('ABC/Prod') {
     description('Folder containing all PROD jobs for project ABC')
 }
-
-listView('ABC') {
-
-  description('All unstable jobs for project ABC')
-    columns {
-        status()
-        weather()
-        name()
-        lastSuccess()
-        lastFailure()
-        lastDuration()
-        buildButton()
-    }
 	
 job('ABC/Dev/CI-CD') {
     scm {
@@ -58,5 +45,4 @@ job('ABC/Prod/CI-CD') {
 			branch('master')	
         }
     }
-}
 }
