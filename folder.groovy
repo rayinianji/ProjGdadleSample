@@ -21,28 +21,3 @@ job('ABC/Dev/CI-CD') {
     }
 }
 	
-job('ABC/QA/CI-CD') {
-    scm {
-        git {
-		
-            remote {
-                url('https://github.com/rayinianji/NewWebproject.git')
-				
-                }
-			branch('master')	
-        }
-    }
-}
-
-job('ABC/Prod/CI-CD') {
-    scm {
-        git {
-		
-            remote {
-                url('https://github.com/rayinianji/NewWebproject.git')
-				
-                }
-			branch('master')	
-        }
-    }
-}
